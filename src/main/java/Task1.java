@@ -22,38 +22,38 @@ public class Task1 {
         String age = in.nextLine();
         StringBuilder fullRequest = new StringBuilder();
         if (names != "") {
-            fullRequest.append("name=" + "\'" + names + "\' , ");
+            fullRequest.append("name =" + "\'" + names + "\' , ");
         }
         else{
-            int nameLength = fullRequest.indexOf("name=" + "\'" + names + "\' , ");
+            int nameLength = fullRequest.indexOf("name =" + "\'" + names + "\' , ");
             if ( nameLength !=-1) {
                 fullRequest.delete(nameLength,nameLength+fullRequest.length());
             }
         }
         if (country != "") {
-            fullRequest.append("country=" + "\'" + country + "\' , ");
+            fullRequest.append("country =" + "\'" + country + "\' , ");
         }
         else{
-            int countryLength = fullRequest.indexOf("country=" + "\'" + country + "\' , ");
+            int countryLength = fullRequest.indexOf("country =" + "\'" + country + "\' , ");
             if ( countryLength !=-1) {
                 fullRequest.delete(countryLength,countryLength+fullRequest.length());
             }
         }
         if (city != "") {
-            fullRequest.append("city=" + "\'" + city+  "\' , ");
+            fullRequest.append("city =" + "\'" + city+  "\' , ");
         }
         else{
-            int cityLength = fullRequest.indexOf("city=" + "\'" + city+  "\' , ");
+            int cityLength = fullRequest.indexOf("city =" + "\'" + city+  "\' , ");
             if ( cityLength !=-1) {
                 fullRequest.delete(cityLength,cityLength+fullRequest.length());
             }
         }
         if (age != "") {
-            fullRequest.append("age=" + "\'" + age + "\'");
+            fullRequest.append("age =" + "\'" + age + "\'");
         }
         else
         {
-            int ageLength = fullRequest.indexOf("age=" + "\'" + age + "\'");
+            int ageLength = fullRequest.indexOf("age =" + "\'" + age + "\'");
             if ( ageLength !=-1) {
                 fullRequest.delete(ageLength,ageLength+fullRequest.length());
             }
